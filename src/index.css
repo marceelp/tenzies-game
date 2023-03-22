@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(3, 5, 37);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main {
+  background-color: white;
+  max-width: 40rem;
+  border-radius: 1rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+p {
+  margin-bottom: 2rem;
+}
+
+section {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.dice {
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dice:active,
+button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.3);
+}
+
+.held {
+  background-color: rgb(119, 255, 0);
+}
+
+button {
+  background-color: rgb(85, 0, 255);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4rem;
+  padding: 0.6rem 2.6rem;
+  border-radius: 0.4rem;
+  border: transparent;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(70, 0, 209);
+}
